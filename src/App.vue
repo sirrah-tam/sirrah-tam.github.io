@@ -1,29 +1,37 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+   	<page-header :links="config.links" :info="config.info"></page-header>
+
+		<intro :info="config.info"></intro>
+
+		<router-view id="main"/>
+
+		<page-footer :contact="config.info.contact"></page-footer>
   </div>
 </template>
 
+<script>
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Intro from './components/Intro'
+import data from '../static/data.json'
+
+export default {
+	name: 'app',
+	components: {
+		'page-header': Header,
+		'page-footer': Footer,
+		'intro': Intro
+	},
+	data () {
+		return {
+			config: data.config
+		}
+	}
+}
+</script>
+
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+	@import './scss/main';
 </style>
+
