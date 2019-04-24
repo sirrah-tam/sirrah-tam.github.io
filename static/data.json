@@ -42,6 +42,21 @@
     ],
     "projects": [
       {
+        "name": "Emily for Seattle",
+        "link": "https://emilyforseattle.com/",
+        "image": "/images/e4cc.jpg"
+      },
+      {
+        "name": "Vivadoria",
+        "link": "https://vivadoria.com/",
+        "image": "/images/vivadoria.jpg"
+      },
+      {
+        "name": "SAMS Institute",
+        "link": "https://samsinstitute.com/",
+        "image": "/images/samsinstitute.jpg"
+      },
+      {
         "name": "Comor Sports",
         "link": "https://comorsports.com/",
         "image": "/images/comor.png"
@@ -114,20 +129,6 @@
         "link": "https://teamtreehouse.com/matharris",
         "link_text": "See more at Team Treehouse >>",
         "logo": "/images/tth-logo.png"
-      },
-      {
-        "name": "CodeSchool",
-        "handle": "codeschool",
-        "api": {
-          "url": "https://www.codeschool.com/users/sirrah_tam.json",
-          "type": "GET",
-          "async": true,
-          "contentType": "application/json",
-          "dataType": "jsonp"
-        },
-        "link": "https://www.codeschool.com/users/sirrah_tam",
-        "link_text": "See my full report card at Code School >>",
-        "logo": "/images/codeschool-logo.png"
       }
     ]
   }
