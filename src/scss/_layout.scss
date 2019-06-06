@@ -5,13 +5,20 @@
 	.navbar-header {
 		float: none;
 	}
+
+	&.navbar-dark {
+		.nav-link {
+			color: $white;
+		}
+	}
 }
 
 section {
 	@extend .container-fluid;
-  	padding: 30px 0;
-  	padding-bottom: 30px;
-  	border-bottom: 5px solid #eee;
+
+	padding: 30px 0;
+	padding-bottom: 30px;
+	border-bottom: 5px solid #eee;
 }
 
 footer {
