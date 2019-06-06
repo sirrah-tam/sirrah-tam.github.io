@@ -31,9 +31,9 @@ export default new Router({
       }
     },
     {
-      path: '/profiles',
-      name: 'profiles',
-      component: () => import(/* webpackChunkName: "profiles" */ './views/Profiles.vue'),
+      path: '/profile',
+      name: 'profile',
+      component: () => import(/* webpackChunkName: "profile" */ './views/Profiles.vue'),
       props: {
         profiles: data.config.profiles
       }
